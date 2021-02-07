@@ -6,7 +6,6 @@ let ul = document.createElement("ul");
 for (let i = 1; i <= 5; i++) {
     let li = document.createElement("li");
     let button = document.createElement("button");
-    button.innerText = "Example " + "#" +i;
     button.id = "example" + i;
 
     li.append(button);
@@ -52,12 +51,10 @@ const setBg = () => {
 setBg();
 
 
-// example2.addEventListener("click", function(){
-//     h1.innerText = h1 + 1;
-// })
-// example3.addEventListener("click", function(){
-//     h1.innerText = Number( Number(h1) - 1);
-// })
-// example4.addEventListener("click", function(){
-//     h1.style.fontSize =  h1 + 10 + "px";
-// })
+let number = 0;
+example2.addEventListener("click" , function(){
+    h1.innerText = ++number;
+})
+example3.addEventListener("click" , function(){
+    h1.innerText = --number;
+})
