@@ -59,3 +59,11 @@ let b = Math.random() * 255;
 h1.style.color = "rgb("+r+","+g+","+b+")";
 };
 example1.addEventListener("click" , randomColor);
+
+let fontSize = 45;
+example4.addEventListener("click" , function(){
+    h1.style.fontSize = (fontSize + 10) +"px";
+})
+example5.addEventListener("click" , function(){
+    h1.style.fontSize = (fontSize - 10) +"px";
+})
