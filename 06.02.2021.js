@@ -43,13 +43,6 @@ example4.innerText = "Increase";
 example5.innerText = "Descrase";
 h1.style.fontSize = 45 +"px";
 
-const setBg = () => {
-    const randomColor = Math.floor(Math.random()*16777215).toString(16);
-    h1.style.color = "#" + randomColor;
-  }
-  example1.addEventListener("click", setBg);
-setBg();
-
 
 let number = 0;
 example2.addEventListener("click" , function(){
@@ -57,4 +50,12 @@ example2.addEventListener("click" , function(){
 })
 example3.addEventListener("click" , function(){
     h1.innerText = --number;
-})
+}); 
+
+function randomColor(){
+let r = Math.random() * 255;
+let g = Math.random() * 255;
+let b = Math.random() * 255;
+h1.style.color = "rgb("+r+","+g+","+b+")";
+};
+example1.addEventListener("click" , randomColor);
