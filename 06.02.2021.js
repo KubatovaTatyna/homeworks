@@ -1,5 +1,5 @@
 let h1 = document.createElement("h1");
-h1.innerText = "0";
+h1.innerText = 0;
 document.body.append(h1);
 
 let ul = document.createElement("ul");
@@ -37,6 +37,12 @@ document.body.append(ul);
 //         h1.style.fontSize = size;
 //     }
 // })
+example1.innerText = "Random color";
+example2.innerText = "+";
+example3.innerText = "-";
+example4.innerText = "Increase";
+example5.innerText = "Descrase";
+h1.style.fontSize = 45 +"px";
 
 const setBg = () => {
     const randomColor = Math.floor(Math.random()*16777215).toString(16);
@@ -44,3 +50,14 @@ const setBg = () => {
   }
   example1.addEventListener("click", setBg);
 setBg();
+
+
+// example2.addEventListener("click", function(){
+//     h1.innerText = h1 + 1;
+// })
+// example3.addEventListener("click", function(){
+//     h1.innerText = Number( Number(h1) - 1);
+// })
+// example4.addEventListener("click", function(){
+//     h1.style.fontSize =  h1 + 10 + "px";
+// })
