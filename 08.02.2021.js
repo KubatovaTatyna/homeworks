@@ -1,8 +1,12 @@
 let button = document.querySelector('button');
 let password = document.querySelector("#password");
 let p = document.createElement("p");
+let p1 = document.createElement("p")
+let numberInput = document.querySelector("#number");
 p.innerText = "";
+p1.innerText = "";
 document.body.append(p);
+document.body.append(p1);
 
 button.addEventListener('click', function(event) {
     console.log(event);
@@ -20,3 +24,14 @@ password.addEventListener('input' , function(event){
         p.innerText = "Excellent!"
     }
 })
+
+let randomNumber = Math.random() * 6 ;
+numberInput.addEventListener('input' , function(event){
+    if(numberInput.value > randomNumber){
+        p1.innerText = "You win!"
+    }
+    else{
+        p1.innerText = "You lost!"
+    }
+})
+console.log(randomNumber);
