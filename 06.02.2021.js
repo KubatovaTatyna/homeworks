@@ -82,8 +82,8 @@ example1.addEventListener("click" , randomColor);
 
 let fontSize = 45;
 example4.addEventListener("click" , function(){
-    h1.style.fontSize = (fontSize + 10) +"px";
+    h1.style.fontSize = ++fontSize +"px";
 })
 example5.addEventListener("click" , function(){
-    h1.style.fontSize = (fontSize - 10) +"px";
+    h1.style.fontSize = --fontSize +"px";
 })
