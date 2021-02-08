@@ -42,6 +42,26 @@ example3.innerText = "-";
 example4.innerText = "Increase";
 example5.innerText = "Descrase";
 h1.style.fontSize = 45 +"px";
+example1.style.backgroundColor = "#ff9999";
+example1.style.color = "white";
+example1.style.border = "1px solid ##000000";
+
+
+example2.style.backgroundColor = "#ff9999";
+example2.style.color = "white";
+example2.style.border = "1px solid ##000000";
+
+example3.style.backgroundColor = "#ff9999";
+example3.style.color = "white";
+example3.style.border = "1px solid #000000";
+
+example4.style.backgroundColor = "#ff9999";
+example4.style.color = "white";
+example4.style.border = "1px solid ##000000";
+
+example5.style.backgroundColor = "#ff9999";
+example5.style.color = "white";
+example5.style.border = "1px solid ##000000";
 
 
 let number = 0;
@@ -56,7 +76,7 @@ function randomColor(){
 let r = Math.random() * 255;
 let g = Math.random() * 255;
 let b = Math.random() * 255;
-h1.style.color = "rgb("+r+","+g+","+b+")";
+h1.style.color = "rgb("+ r +","+ g +","+ b +")";
 };
 example1.addEventListener("click" , randomColor);
 
