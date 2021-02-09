@@ -5,6 +5,9 @@ let plusButton = document.querySelector("#plus");
 let minusButton = document.querySelector("#minus");
 let multiplicationButton = document.querySelector("#multiplication");
 let divisionButton = document.querySelector("#division");
+let underText = document.querySelector("#under-text")
+let underText2 = document.querySelector("#under-text2")
+let underText3 = document.querySelector("#under-text3")
 
 let numberInput = document.querySelector("#number");
 let numberInput2 = document.querySelector("#number-2");
@@ -18,9 +21,9 @@ p.innerText = "";
 p1.innerText = "";
 p2.innerText = "";
 
-document.body.append(p);
-document.body.append(p1);
-document.body.append(p2);
+underText.append(p);
+underText2.append(p1);
+underText3.append(p2);
 
 password.addEventListener('input' , function(event){
     if(password.value.length <= 5){
@@ -46,6 +49,8 @@ numberInput.addEventListener('input' , function(event){
 })
 console.log(randomNumber);
 
-// plusButton.addEventListener('click' , function(event){
-//     p2.innerText = numberInput2.value + numberInput3.value;
-// });
+plusButton.addEventListener('click' , function(event){
+    let plus = numberInput2.value + numberInput3.value;
+    p2.innerText = String(plus);
+});
+console.log(typeof plus)
