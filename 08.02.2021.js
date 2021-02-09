@@ -5,6 +5,8 @@ let plusButton = document.querySelector("#plus");
 let minusButton = document.querySelector("#minus");
 let multiplicationButton = document.querySelector("#multiplication");
 let divisionButton = document.querySelector("#division");
+let degreeButton = document.querySelector("#degree");
+
 let underText = document.querySelector("#under-text")
 let underText2 = document.querySelector("#under-text2")
 let underText3 = document.querySelector("#under-text3")
@@ -51,6 +53,21 @@ console.log(randomNumber);
 
 plusButton.addEventListener('click' , function(event){
     let plus = numberInput2.value + numberInput3.value;
-    p2.innerText = String(plus);
+    p2.innerText = plus;
 });
-console.log(typeof plus)
+minusButton.addEventListener('click' , function(event){
+    let minus = numberInput2.value - numberInput3.value;
+    p2.innerText = minus;
+});
+multiplicationButton.addEventListener('click' , function(event){
+    let multiplication = numberInput2.value * numberInput3.value;
+    p2.innerText = multiplication;
+});
+divisionButton.addEventListener('click' , function(event){
+    let division = numberInput2.value / numberInput3.value;
+    p2.innerText = division;
+});
+degreeButton.addEventListener('click' , function(event){
+    let degree = numberInput2.value ** numberInput3.value;
+    p2.innerText = degree;
+});
