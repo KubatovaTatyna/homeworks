@@ -32,7 +32,7 @@ document.body.addEventListener('mousedown' , function(event){
             div.style.width = '60px';
             div.style.height = '30px';
         }
-        
+
     document.body.addEventListener('keydown' , function(event){
         if(event.which == 49){
             div.style.opacity = .1;
@@ -66,3 +66,6 @@ document.body.addEventListener('mousedown' , function(event){
         }
     });
 });
+document.oncontextmenu  = function(){
+    return false;
+}
