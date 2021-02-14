@@ -11,4 +11,11 @@ document.body.addEventListener('mousedown' , function(event){
     div.style.top = event.clientY - 15 + "px" ;
     div.style.left = event.clientX - 15 + "px";
 
+    if(event.which == 2){
+        div.style.backgroundColor = 'green';
+        }
+    else if(event.which == 3){
+            div.style.backgroundColor = 'blue';
+            event.preventDefault();
+    }
 });
