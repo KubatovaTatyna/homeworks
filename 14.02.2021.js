@@ -4,4 +4,6 @@ document.body.addEventListener('mousedown' , function(event){
     div.style.backgroundColor = 'red';
     div.style.width = '30px';
     div.style.height = '30px';
+    
+    document.body.append(div);
 });
