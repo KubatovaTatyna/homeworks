@@ -18,4 +18,18 @@ document.body.addEventListener('mousedown' , function(event){
             div.style.backgroundColor = 'blue';
             event.preventDefault();
     }
+    
+    if (event.ctrlKey) {
+        div.style.borderRadius = '0';
+        }
+        else if (event.shiftKey) {
+            div.style.borderRadius = '0';
+            div.style.width = '60px';
+            div.style.height = '30px';
+        }
+        else if (event.altKey) {
+            div.style.borderRadius = '50%';
+            div.style.width = '60px';
+            div.style.height = '30px';
+        }
 });
